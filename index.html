@@ -8,13 +8,14 @@
     <title>Frontend Mentor | News homepage</title>
     <link rel="stylesheet" href="style.css">
 
+    <script src="script.js" defer></script>
 
 </head>
 
 <body>
     <header>
         <img src="assets/images/logo.svg" alt="logo">
-        <img class="menu" src="assets/images/icon-menu.svg" alt="menu bar">
+        <div onclick="openMenu()" class="menu"></div>
         <nav>
             <ul>
                 <li>Home</li>
@@ -24,17 +25,16 @@
                 <li>Categories</li>
             </ul>
         </nav>
-
     </header>
     <main>
-        <div>
+        <div class="hero-sidebar">
 
-            <section>
+            <section class="web3">
                 <div class="web3-image">
 
                 </div>
 
-                <div>
+                <div class="bright">
                     <h1>The Bright Future of Web 3.0? </h1>
                     <div>
                         <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
@@ -43,7 +43,7 @@
                 </div>
             </section>
 
-            <section>
+            <section class="sidebar">
                 <h2>New</h1>
                     <div>
                         <h4>Hydrogen VS Electric Cars</h4>
@@ -60,32 +60,32 @@
             </section>
 
         </div>
-        <section>
-            <div>
-                <div>
-                    <img src="assets/images/image-retro-pcs.jpg " alt="Retro img">
+        <section class="boxes_container">
+            <div class="box">
+                <div class="box_img retro">
+
                 </div>
-                <div>
+                <div class="box_txt ">
                     <h3>01</h3>
                     <p><b>Reviving Retro PCs</b></p>
                     <p>What happens when old PCs are given modern upgrades?</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="assets/images/image-top-laptops.jpg" alt="Laptops image">
+            <div class="box">
+                <div class="box_img laptop">
+
                 </div>
-                <div>
+                <div class="box_txt">
                     <h3>02 </h3>
                     <p><b> Top 10 Laptops of 2022 </b></p>
                     <p> Our best picks for various needs and budgets. </p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="assets/images/image-gaming-growth.jpg" alt="gaming image">
+            <div class="box">
+                <div class="box_img gaming">
+
                 </div>
-                <div>
+                <div class="box_txt">
                     <h3>03</h3>
                     <p><b>The Growth of Gaming</b></p>
                     <p> How the pandemic has sparked fresh opportunities.</p>
